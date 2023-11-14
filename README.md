@@ -1,3 +1,36 @@
+
+  # MyePlace
+  
+  ## Description
+  an attempt at challenge 14 by Sean C
+  
+  ## Table of Contents
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [License](#license)
+  - [Contributing](#contributing)
+  - [Tests](#tests)
+  - [Questions](#questions)
+  
+  ## Installation
+  they cannot install at this time
+  
+  ## Usage
+  they may require some assistance 
+  
+  ## License
+  This project is licensed under the MIT license.
+  
+  ## Contributing
+  if they want to help im not paying
+  
+  ## Tests
+  ive been testing this project for 7 hours, be my guest
+  
+  ## Questions
+  - GitHub: [scsc22](https://github.com/scsc22)
+  - Email: seanconnor22@gmail.com
+  ``````
 myeplace
 |-- config
 |   |-- connection.js        // Database connection setup
@@ -47,3 +80,4 @@ myeplace
 |-- .gitignore               // Git ignore file
 |-- package.json             // Project dependencies and scripts
 |-- server.js                // Express.js server setup
+``````
