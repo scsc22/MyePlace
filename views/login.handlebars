@@ -1,0 +1,19 @@
+<!-- views/login.handlebars -->
+
+{{> navbar}}
+
+<h1>Login to MyePlace</h1>
+
+<form action="/api/login" method="post">
+  <label for="username">Username:</label>
+  <input type="text" name="username" required>
+
+  <label for="password">Password:</label>
+  <input type="password" name="password" required>
+
+  <button type="submit">Login</button>
+</form>
+
+<p>Don't have an account? <a href="/signup">Signup here</a>.</p>
+
+{{> footer}}

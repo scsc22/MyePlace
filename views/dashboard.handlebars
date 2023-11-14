@@ -1,0 +1,26 @@
+<!-- views/dashboard.handlebars -->
+
+{{> navbar}}
+
+<h1>Your Dashboard</h1>
+
+{{#if loggedIn}}
+  <h2>Your Blog Posts</h2>
+  <div>
+    {{#each posts}}
+      <div>
+        <h3>{{title}}</h3>
+        <p>{{content}}</p>
+        <p>Posted on {{createdAt}}</p>
+        <a href="/post/{{id}}">Read more</a>
+        <form action="/api/posts/{{id}}" method="post">
+          <button type="submit">Delete</button>
+        </form>
+        <a href="/dashboard/edit/{{id}}">Edit</a>
+      </div>
+    {{/each}}
+  </div>
+  <a href="/dashboard/create">Create a new blog post</a>
+{{else}}
+  <p>Login to view your dashboard.</p>
+{{/if}}

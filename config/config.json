@@ -1,0 +1,35 @@
+{
+  "development": {
+    "username": "root",
+    "password": "password",
+    "database": "myeplace_db",
+    "host": "localhost",
+    "dialect": "mysql",
+    "operatorsAliases": false,
+    "migrationStorageTableName": "sequelize_meta",
+    "migrations": [
+      "./migrations"
+    ]
+  },
+  "test": {
+    "username": "root",
+    "password": "your_mysql_password",
+    "database": "myeplace_db_test",
+    "host": "localhost",
+    "dialect": "mysql",
+    "operatorsAliases": false,
+    "migrationStorageTableName": "sequelize_meta",
+    "migrations": [
+      "./migrations"
+    ]
+  },
+  "production": {
+    "use_env_variable": "JAWSDB_URL",
+    "dialect": "mysql",
+    "operatorsAliases": false,
+    "migrationStorageTableName": "sequelize_meta",
+    "migrations": [
+      "./migrations"
+    ]
+  }
+}

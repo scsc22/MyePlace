@@ -1,0 +1,28 @@
+<!-- views/post.handlebars -->
+
+{{> navbar}}
+
+{{#if loggedIn}}
+  <h1>{{post.title}}</h1>
+  <p>{{post.content}}</p>
+  <p>Posted by {{post.user.username}} on {{post.createdAt}}</p>
+
+  <h2>Comments</h2>
+  {{#each post.comments}}
+    <div>
+      <p>{{content}}</p>
+      <p>Comment by {{user.username}} on {{createdAt}}</p>
+    </div>
+  {{/each}}
+
+  <h3>Add a Comment</h3>
+  <form action="/api/comments" method="post">
+    <textarea name="content" rows="4" cols="50" required></textarea>
+    <input type="hidden" name="post_id" value="{{post.id}}">
+    <button type="submit">Submit</button>
+  </form>
+{{else}}
+  <p>Login to view and comment on this post.</p>
+{{/if}}
+
+{{> footer}}
